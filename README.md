@@ -1,4 +1,4 @@
-CIS 181 Favorite Vacation Spot Website Project
+# CIS 181 Favorite Vacation Spot Website Project
 
 I need to create a 4-page web site on a travel destination of my choosing as a class project. I chose Pictured Rocks National Lakeshore in Upper Peninsula of Michigan.
 
