@@ -186,17 +186,17 @@ article.activities li {
 }
 
 li.hiking {
-    list-style-image: url(icons/person-hiking-solid.svg);
+    list-style-image: url(Icons/person-hiking-solid.svg);
     padding-left: 5px;
 }
 
 li.camping {
-    list-style-image: url(icons/campground-solid.svg);
+    list-style-image: url(Icons/campground-solid.svg);
     padding-left: 5px;
 }
 
 li.water {
-    list-style-image: url(icons/sailboat-solid.svg);
+    list-style-image: url(Icons/sailboat-solid.svg);
     padding-left: 5px;
 }
 
@@ -222,17 +222,17 @@ article.highlights li {
 }
 
 li.castle {
-    list-style-image: url(icons/chess-rook-solid.svg);
+    list-style-image: url(Icons/chess-rook-solid.svg);
     padding-left: 5px;
 }
 
 li.river {
-    list-style-image: url(icons/water-solid.svg);
+    list-style-image: url(Icons/water-solid.svg);
     padding-left: 5px;
 }
 
 li.beach {
-    list-style-image: url(icons/umbrella-beach-solid.svg);
+    list-style-image: url(Icons/umbrella-beach-solid.svg);
     padding-left: 5px;
 }
 
