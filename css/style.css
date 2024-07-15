@@ -12,7 +12,10 @@
 	Filename: 	style.css
 */
 
-/*  STYLES: General */
+/*  ===============
+    STYLES: General
+    ===============
+*/
 
 @font-face {
     font-family: 'Nunito';
@@ -117,7 +120,14 @@ footer a:active, footer a:hover {
     color: rgb(0, 27, 54);
 }
 
-/*  STYLES: index.html  */
+footer.small {
+    display: none;
+}
+
+/*  ==================
+    STYLES: index.html
+    ==================
+*/
 
 article.index h1, article.index p {
     margin-left: 30px;
@@ -149,7 +159,18 @@ figure.index figcaption {
     font-size: 0.9em;
 }
 
-/*  STYLES: history.html    */
+footer.normal {
+    display: block;
+}
+
+footer.small {
+    display: none;
+}
+
+/*  ====================
+    STYLES: history.html
+    ====================
+*/
 
 article.history h1, article.history p {
     margin-left: 30px;
@@ -177,7 +198,10 @@ figure.history figcaption {
     font-size: 0.9em;
 }
 
-/*  STYLES: activities.html */
+/*  =======================
+    STYLES: activities.html
+    =======================
+*/
 
 section.top h1, article.outdoor p {
     margin-left: 30px;
@@ -287,7 +311,10 @@ figure.lighthouse figcaption {
     width: 100%;
 }
 
-/*  STYLES: services.html   */
+/*  =====================
+    STYLES: services.html
+    =====================
+*/
 
 article.services h1, article.services p {
     margin-left: 30px;
@@ -351,7 +378,10 @@ col.providers {
     background: rgb(255, 220, 255); width: 33%;
 }
 
-/*  STYLES: about.html  */
+/*  ==================
+    STYLES: about.html
+    ==================
+*/
 
 section.aboutMe {
     display: flex;
@@ -401,10 +431,13 @@ article.aboutMe p {
     margin-bottom: 0px;
 }
 
-/*  MOBILE STYLES */
+/*  ================================
+    TABLET STYLES: 401 to 575 pixels
+    ================================
+*/
 
 @media only screen and (max-width: 575px) {
-    /*  MOBILE STYLES: General  */
+    /*  TABLET STYLES: General  */
 
     nav.horizontal {
         margin-top: 0px;
@@ -438,7 +471,10 @@ article.aboutMe p {
         line-height: .95em;
     }
 
-    /*  MOBILE STYLES: index.html   */
+    /*  =========================
+        TABLET STYLES: index.html
+        =========================
+    */
 
     article.index h1, article.index p {
         margin-left: 15px;
@@ -460,10 +496,13 @@ article.aboutMe p {
     figure.index figcaption {
         padding-top: 2px;
         text-align: right;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
-    /*  MOBILE STYLES: history.html */
+    /*  ===========================
+        TABLET STYLES: history.html
+        ===========================
+    */
 
     article.history h1, article.history p {
         margin-left: 15px;
@@ -484,10 +523,13 @@ article.aboutMe p {
     figure.history figcaption {
         padding-top: 2px;
         text-align: right;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
-    /*  MOBILE STYLES: activities.html  */
+    /*  =============================
+        TABLET STYLES: activities.html
+        =============================
+    */
 
     section.top h1, article.outdoor p {
         margin-left: 15px;
@@ -527,7 +569,10 @@ article.aboutMe p {
         display: none;
     }
 
-    /*  MOBILE STYLES: services.html    */
+    /*  ============================
+        TABLET STYLES: services.html
+        ============================
+    */
 
     article.services h1, article.services p {
         margin-left: 15px;
@@ -548,7 +593,10 @@ article.aboutMe p {
         padding-top: 3px;
     }
 
-    /*  MOBILE STYLES: about.html   */
+    /*  =========================
+        TABLET STYLES: about.html
+        =========================
+    */
 
     section.aboutMe h1, section.aboutMe p {
         margin-left: 15px;
@@ -559,10 +607,10 @@ article.aboutMe p {
         flex-direction: column;
     }
 
-
     figure.aboutMe figcaption {
         padding-top: 3px;
         text-align: right;
+        font-size: 0.8em;
     }
 
     article.aboutMe p {
@@ -570,5 +618,20 @@ article.aboutMe p {
         margin-top: 0px;
         margin-bottom: 15px;
         line-height: 1.3em;
+    }
+}
+
+/*  ==============================
+    MOBILE STYLES: 0 to 400 pixels
+    ==============================
+*/
+
+@media only screen and (max-width: 400px) {
+    footer.normal {
+        display: none;
+    }
+
+    footer.small {
+        display: block;
     }
 }
