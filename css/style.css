@@ -12,6 +12,8 @@
 	Filename: 	style.css
 */
 
+/*  STYLES: General */
+
 @font-face {
     font-family: 'Nunito';
     src: url('../fonts/static/Nunito-Regular.ttf') format('truetype');
@@ -59,8 +61,8 @@ body {
 }
 
 nav.horizontal {
-    margin-top: 30px;
-    border-bottom: 4px solid rgb(0, 27, 54);
+    margin-top: 20px;
+    border-bottom: 5px solid rgb(0, 27, 54);
     background: rgb(98, 119, 141);
 }
 
@@ -77,7 +79,7 @@ nav.horizontal li {
     padding: 0;
 }
 
-nav ul a {
+nav.horizontal ul a {
     display: block;
     color: rgb(0, 27, 54);
     padding: 10px 0px;
@@ -115,9 +117,9 @@ footer a:active, footer a:hover {
     color: rgb(0, 27, 54);
 }
 
-/*  INDEX.HTML    */
+/*  STYLES: index.html  */
 
-article.index p, h1 {
+article.index h1, article.index p {
     margin-left: 30px;
     padding-bottom: 5px;
 }
@@ -147,9 +149,9 @@ figure.index figcaption {
     font-size: 0.9em;
 }
 
-/*  HISTORY.HTML    */
+/*  STYLES: history.html    */
 
-article.history h1, p {
+article.history h1, article.history p {
     margin-left: 30px;
     padding-bottom: 5px;
 }
@@ -175,7 +177,7 @@ figure.history figcaption {
     font-size: 0.9em;
 }
 
-/*  ACTIVITIES.HTML    */
+/*  STYLES: activities.html */
 
 section.top h1, article.outdoor p {
     margin-left: 30px;
@@ -285,7 +287,12 @@ figure.lighthouse figcaption {
     width: 100%;
 }
 
-/*  SERVICES.HTML    */
+/*  STYLES: services.html   */
+
+article.services h1, article.services p {
+    margin-left: 30px;
+    padding-bottom: 5px;
+}
 
 table.services {
     border: 5px solid rgb(98, 119, 141);
@@ -344,7 +351,7 @@ col.providers {
     background: rgb(255, 220, 255); width: 33%;
 }
 
-/*  ABOUT.HTML    */
+/*  STYLES: about.html  */
 
 section.aboutMe {
     display: flex;
@@ -355,12 +362,12 @@ section.aboutMe {
 section.aboutMe h1 {
     margin-left: 30px;
     margin-bottom: 0px;
-    width: 80%;
 }
 
 div.aboutMe {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 figure.aboutMe {
@@ -392,4 +399,176 @@ article.aboutMe {
 article.aboutMe p {
     margin-right: 30px;
     margin-bottom: 0px;
+}
+
+/*  MOBILE STYLES */
+
+@media only screen and (max-width: 575px) {
+    /*  MOBILE STYLES: General  */
+
+    nav.horizontal {
+        margin-top: 0px;
+        border-bottom: 5px solid rgb(0, 27, 54);
+        background: rgb(98, 119, 141);
+    }
+
+    nav.horizontal ul {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        text-align: left;
+    }
+
+    nav.horizontal ul a {
+        display: block;
+        color: rgb(0, 27, 54);
+        padding: 0px 0px;
+        font-weight: bold;
+        font-size: 1.5em;
+        line-height: 1.3em;
+    }
+
+    footer {
+        margin-top: auto;
+        margin-bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        font-size: .75em;
+        line-height: .95em;
+    }
+
+    /*  MOBILE STYLES: index.html   */
+
+    article.index h1, article.index p {
+        margin-left: 15px;
+        padding-bottom: 0px;
+        line-height: 1.3em;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    figure.index {
+        display: flex;
+        margin: auto;
+        margin-right: 0px;
+        margin-top: 15px;
+        flex-flow: column nowrap;
+        max-width: 95%;
+    }
+
+    figure.index figcaption {
+        padding-top: 2px;
+        text-align: right;
+        font-size: 0.9em;
+    }
+
+    /*  MOBILE STYLES: history.html */
+
+    article.history h1, article.history p {
+        margin-left: 15px;
+        padding-bottom: 0px;
+        line-height: 1.3em;
+        margin-top: 15px;
+    }
+
+    figure.history {
+        display: flex;
+        margin: auto;
+        margin-right: 0px;
+        margin-top: 15px;
+        flex-flow: column nowrap;
+        max-width: 95%;
+    }
+
+    figure.history figcaption {
+        padding-top: 2px;
+        text-align: right;
+        font-size: 0.9em;
+    }
+
+    /*  MOBILE STYLES: activities.html  */
+
+    section.top h1, article.outdoor p {
+        margin-left: 15px;
+        line-height: 1.3em;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    article.activities h2 {
+        margin-left: 15px;
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+
+    article.activities li {
+        list-style-position: inside;
+        margin-left: -25px;
+    }
+
+    section.bottom h2 {
+        margin-left: 15px;
+        line-height: 1.2em;
+        margin-top: 0px;
+    }
+
+    section.bottom p {
+        margin-left: 15px;
+        line-height: 1.3em;
+    }
+
+    article.highlights li {
+        list-style-position: inside;
+        margin-left: -25px;
+    }
+
+    figure.lighthouse {
+        display: none;
+    }
+
+    /*  MOBILE STYLES: services.html    */
+
+    article.services h1, article.services p {
+        margin-left: 15px;
+        padding-bottom: 0px;
+        line-height: 1.3em;
+    }
+
+    table.services {
+        border: 5px solid rgb(98, 119, 141);
+        border-collapse: collapse;
+        font-size: 0.75em;
+        width: 95%;
+        margin-left: 15px;
+
+    }
+
+    table.services caption {
+        padding-top: 3px;
+    }
+
+    /*  MOBILE STYLES: about.html   */
+
+    section.aboutMe h1, section.aboutMe p {
+        margin-left: 15px;
+        line-height: 1.3em;
+    }
+
+    div.aboutMe {
+        flex-direction: column;
+    }
+
+
+    figure.aboutMe figcaption {
+        padding-top: 3px;
+        text-align: right;
+    }
+
+    article.aboutMe p {
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        line-height: 1.3em;
+    }
 }
