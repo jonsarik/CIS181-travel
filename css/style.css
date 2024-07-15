@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+/*
+    Final Project for CIS 181_WW1_HW
+    Web Development I/Basic Web Technologies
+	Professor Laurie Alfaro
+
+	Pictured Rocks: Style Sheet
+	Author: 	Jonathan Sarkarati
+	Date: 		07/10/2024
+
+	Filename: 	style.css
+*/
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/static/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/static/Nunito-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/static/Nunito-SemiBold.ttf') format('truetype');
+     font-weight: 700;
+     font-style: normal;
+}
+
+html {
+    background: rgb(201, 206, 214);
+    color: rgb(0, 27, 54);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+em {
+    font-weight: 400;
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    margin: auto;
+}
+
+nav.horizontal {
+    margin-top: 30px;
+    border-bottom: 4px solid rgb(0, 27, 54);
+    background: rgb(98, 119, 141);
+}
+
+nav.horizontal ul {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+}
+
+nav.horizontal li {
+    flex: 1 1;
+    padding: 0;
+}
+
+nav ul a {
+    display: block;
+    color: rgb(0, 27, 54);
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul a:active, nav ul a:hover {
+    background: rgb(150, 166, 182);
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+article {
+    width: 95%;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: .85em;
+    line-height: .95em;
+    background: rgb(98, 119, 141);
+    color: rgb(239, 239, 239);
+    text-align: center;
+}
+
+footer a {
+    color: rgb(239, 239, 239);
+}
+
+footer a:active, footer a:hover {
+    color: rgb(0, 27, 54);
+}
+
+/*  INDEX.HTML    */
+
+article.index p, h1 {
+    margin-left: 30px;
+    padding-bottom: 5px;
+}
+
+p.w3c {
+    text-align: center;
+}
+
+figure.index {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    flex-flow: column nowrap;
+    max-width: 80%;
+}
+
+figure.index img {
+    border: solid 1px white;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: gray 0 0 10px;
+}
+
+figure.index figcaption {
+    padding-top: 2px;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+/*  HISTORY.HTML    */
+
+article.history h1, p {
+    margin-left: 30px;
+    padding-bottom: 5px;
+}
+
+figure.history {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    flex-flow: column nowrap;
+    max-width: 80%;
+}
+
+figure.history img {
+    border: solid 1px white;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: gray 0 0 10px;
+}
+
+figure.history figcaption {
+    padding-top: 2px;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+/*  ACTIVITIES.HTML    */
+
+section.top h1, article.outdoor p {
+    margin-left: 30px;
+}
+
+article.activities h2 {
+    margin-left: 30px;
+    font-size: 1.2em;
+}
+
+article.activities li {
+    list-style-position: outside;
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+
+li.hiking {
+    list-style-image: url(../images/icons/person-hiking-solid.svg);
+    padding-left: 5px;
+}
+
+li.camping {
+    list-style-image: url(../images/icons/campground-solid.svg);
+    padding-left: 5px;
+}
+
+li.water {
+    list-style-image: url(../images/icons/sailboat-solid.svg);
+    padding-left: 5px;
+}
+
+section.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+section.bottom h2 {
+    margin-left: 30px;
+    font-size: 1.2em;
+}
+
+section.bottom p {
+    margin-left: 30px;
+}
+
+article.highlights li {
+    list-style-position: outside;
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+
+li.castle {
+    list-style-image: url(../images/Icons/chess-rook-solid.svg);
+    padding-left: 5px;
+}
+
+li.river {
+    list-style-image: url(../images/icons/water-solid.svg);
+    padding-left: 5px;
+}
+
+li.beach {
+    list-style-image: url(../images/icons/umbrella-beach-solid.svg);
+    padding-left: 5px;
+}
+
+article.visitorTips p a:link, article.visitorTips p a:visited {
+    color: rgb(0, 27, 54);
+}
+
+article.visitorTips p a:active, article.visitorTips p a:hover {
+    color: white;
+}
+
+figure.lighthouse a:link, figure.lighthouse a:visited {
+    color: rgb(0, 27, 54);
+}
+
+figure.lighthouse a:active, figure.lighthouse a:hover {
+    color: white;
+}
+
+div.bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+figure.lighthouse {
+    flex: 1;
+    min-width: 145px;
+}
+
+figure.lighthouse img {
+    border: solid 1px white;
+    border-radius: 15px;
+    box-shadow: gray 0 0 10px;
+    height: auto;
+    width: 100%;
+}
+
+figure.lighthouse figcaption {
+    padding-top: 2px;
+    text-align: right;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/*  SERVICES.HTML    */
+
+table.services {
+    border: 5px solid rgb(98, 119, 141);
+    border-collapse: collapse;
+    font-size: 0.75em;
+    width: 60%;
+    margin: auto;
+}
+
+table.services th, table.services td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+table.services caption {
+    caption-side: bottom;
+    text-align: right;
+    padding-top: 2px;
+}
+
+table.services a:link, table.services a:visited {
+    color: rgb(0, 27, 54);
+    font-weight: bold;
+}
+
+article.services a:active, article.services a:hover {
+    color: white;
+}
+
+table.services thead {
+    background: rgb(98, 119, 141); color: white;
+}
+
+table.services tfoot {
+    background: rgb(98, 119, 141);
+    color: white;
+}
+
+table.services tfoot a:link, table.services tfoot a:visited {
+    color: white;
+}
+
+table.services tfoot a:active, table.services tfoot a:hover {
+    color: rgb(0, 27, 54);
+}
+
+table.services thead tr {height: 30px;}
+
+table.services tbody tr {height: 30px;}
+
+col#activity {
+    width: 34%;
+}
+
+col.providers {
+    background: rgb(255, 220, 255); width: 33%;
+}
+
+/*  ABOUT.HTML    */
+
+section.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.aboutMe h1 {
+    margin-left: 30px;
+    margin-bottom: 0px;
+    width: 80%;
+}
+
+div.aboutMe {
+    display: flex;
+    flex-direction: row;
+}
+
+figure.aboutMe {
+    flex: 1;
+    min-width: 175px;
+}
+
+figure.aboutMe img {
+    border: solid 1px white;
+    border-radius: 15px;
+    box-shadow: gray 0 0 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+figure.aboutMe figcaption {
+    padding-top: 2px;
+    text-align: left;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+article.aboutMe {
+    display: flex;
+    flex-flow: column;
+    flex: 2;
+}
+
+article.aboutMe p {
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
