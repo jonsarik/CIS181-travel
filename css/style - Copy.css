@@ -117,7 +117,7 @@ footer a {
 }
 
 footer a:active, footer a:hover {
-    color: orange;
+    color: rgb(0, 27, 54);
 }
 
 footer.small {
@@ -159,7 +159,9 @@ figure.index figcaption {
     font-size: 0.9em;
 }
 
-
+footer.normal {
+    display: block;
+}
 
 footer.small {
     display: none;
@@ -272,7 +274,7 @@ article.visitorTips p a:link, article.visitorTips p a:visited {
 }
 
 article.visitorTips p a:active, article.visitorTips p a:hover {
-    color: orange;
+    color: white;
 }
 
 figure.lighthouse a:link, figure.lighthouse a:visited {
@@ -280,7 +282,7 @@ figure.lighthouse a:link, figure.lighthouse a:visited {
 }
 
 figure.lighthouse a:active, figure.lighthouse a:hover {
-    color: orange;
+    color: white;
 }
 
 div.bottom {
@@ -307,10 +309,6 @@ figure.lighthouse figcaption {
     text-align: right;
     font-size: 0.9em;
     width: 100%;
-}
-
-footer.lighthouse_small {
-    display: none;
 }
 
 /*  =====================
@@ -348,7 +346,7 @@ table.services a:link, table.services a:visited {
 }
 
 article.services a:active, article.services a:hover {
-    color: orange;
+    color: white;
 }
 
 table.services thead {
@@ -365,7 +363,7 @@ table.services tfoot a:link, table.services tfoot a:visited {
 }
 
 table.services tfoot a:active, table.services tfoot a:hover {
-    color: orange;
+    color: rgb(0, 27, 54);
 }
 
 table.services thead tr {height: 30px;}
@@ -533,75 +531,42 @@ article.aboutMe p {
         =============================
     */
 
-    div.background_tablet {
-        #background-color: rgb(201, 206, 214);
-        background-color: rgb(98, 119, 141);
-        background-image: url(../images/grand_island_lighthouse.png);
-        background-position: 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-blend-mode: multiply;
-    }
-
     section.top h1, article.outdoor p {
         margin-left: 15px;
         line-height: 1.3em;
         margin-top: 15px;
         margin-bottom: 0px;
-        color: white;
     }
 
     article.activities h2 {
         margin-left: 15px;
         font-size: 1.2em;
         line-height: 1.3em;
-        color: white;
     }
 
     article.activities li {
         list-style-position: inside;
         margin-left: -25px;
-        color: white;
     }
 
     section.bottom h2 {
         margin-left: 15px;
         line-height: 1.2em;
         margin-top: 0px;
-        color: white;
     }
 
     section.bottom p {
         margin-left: 15px;
         line-height: 1.3em;
-        color: white;
     }
 
     article.highlights li {
         list-style-position: inside;
         margin-left: -25px;
-        color: white;
-    }
-
-    article.visitorTips p a:link, article.visitorTips p a:visited {
-        color: white;
-    }
-
-    article.visitorTips p a:active, article.visitorTips p a:hover {
-        color: orange;
     }
 
     figure.lighthouse {
         display: none;
-    }
-
-    footer.lighthouse_normal {
-        display: none
-    }
-
-    footer.lighthouse_small {
-        display: block;
-        font-size: 0.8em;
     }
 
     /*  ============================
