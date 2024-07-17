@@ -102,10 +102,6 @@ nav ul a:active, nav ul a:hover {
     text-transform: uppercase;
 }
 
-article {
-    width: 95%;
-}
-
 footer {
     margin-top: auto;
     margin-bottom: 5px;
@@ -135,21 +131,25 @@ footer.small {
     ==================
 */
 
-article.index h1, article.index p {
-    margin-left: 30px;
-    padding-bottom: 5px;
-}
+main.index {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 
-p.w3c {
-    text-align: center;
 }
 
 figure.index {
-    display: flex;
+    flex: 1;
+    width: 80%;
     margin: auto;
     margin-top: 30px;
-    flex-flow: column nowrap;
-    max-width: 80%;
+
+}
+
+figure.index figcaption {
+    padding-top: 3px;
+    text-align: right;
+    font-size: 0.9em;
 }
 
 figure.index img {
@@ -159,13 +159,21 @@ figure.index img {
     box-shadow: gray 0 0 10px;
 }
 
-figure.index figcaption {
-    padding-top: 2px;
-    text-align: right;
-    font-size: 0.9em;
+article.index {
+    flex: 2;
+    margin: auto;
 }
 
+article.index h1, article.index p {
+    margin-left: 30px;
+    margin-right: 15px;
+}
 
+div.w3c {
+    margin-top: auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
 
 footer.small {
     display: none;
@@ -178,15 +186,16 @@ footer.small {
 
 article.history h1, article.history p {
     margin-left: 30px;
-    padding-bottom: 5px;
+    margin-right: 15px;
+
 }
 
 figure.history {
     display: flex;
+    flex-flow: column;
     margin: auto;
     margin-top: 30px;
-    flex-flow: column nowrap;
-    max-width: 80%;
+    width: 80%;
 }
 
 figure.history img {
@@ -197,7 +206,7 @@ figure.history img {
 }
 
 figure.history figcaption {
-    padding-top: 2px;
+    padding-top: 3px;
     text-align: right;
     font-size: 0.9em;
 }
@@ -209,16 +218,19 @@ figure.history figcaption {
 
 section.top h1, article.outdoor p {
     margin-left: 30px;
+    margin-right: 15px;
 }
 
 article.activities h2 {
     margin-left: 30px;
+    margin-right: 15px;
     font-size: 1.2em;
 }
 
 article.activities li {
     list-style-position: outside;
     margin-left: 20px;
+    margin-right: 15px;
     line-height: 1.5em;
 }
 
@@ -309,7 +321,7 @@ figure.lighthouse img {
 }
 
 figure.lighthouse figcaption {
-    padding-top: 2px;
+    padding-top: 3px;
     text-align: right;
     font-size: 0.9em;
     width: 100%;
@@ -326,7 +338,7 @@ footer.lighthouse_small {
 
 article.services h1, article.services p {
     margin-left: 30px;
-    padding-bottom: 5px;
+    margin-right: 15px;
 }
 
 table.services {
@@ -345,7 +357,7 @@ table.services th, table.services td {
 table.services caption {
     caption-side: bottom;
     text-align: right;
-    padding-top: 2px;
+    padding-top: 3px;
 }
 
 table.services a:link, table.services a:visited {
@@ -422,7 +434,7 @@ figure.aboutMe img {
 }
 
 figure.aboutMe figcaption {
-    padding-top: 2px;
+    padding-top: 3px;
     text-align: left;
     font-size: 0.9em;
     width: 100%;
@@ -435,7 +447,7 @@ article.aboutMe {
 }
 
 article.aboutMe p {
-    margin-right: 30px;
+    margin-right: 15px;
     margin-bottom: 0px;
 }
 
@@ -449,8 +461,8 @@ div.social_media {
 }
 
 div.social_media img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease;
 }
 
@@ -512,12 +524,7 @@ div.social_media img:hover {
     }
 
     figure.index {
-        display: flex;
-        margin: auto;
-        margin-right: 0px;
         margin-top: 15px;
-        flex-flow: column nowrap;
-        max-width: 95%;
     }
 
     figure.index figcaption {
@@ -533,18 +540,12 @@ div.social_media img:hover {
 
     article.history h1, article.history p {
         margin-left: 15px;
-        padding-bottom: 0px;
         line-height: 1.3em;
         margin-top: 15px;
     }
 
     figure.history {
-        display: flex;
-        margin: auto;
-        margin-right: 0px;
         margin-top: 15px;
-        flex-flow: column nowrap;
-        max-width: 95%;
     }
 
     figure.history figcaption {
@@ -636,17 +637,11 @@ div.social_media img:hover {
 
     article.services h1, article.services p {
         margin-left: 15px;
-        padding-bottom: 0px;
         line-height: 1.3em;
     }
 
     table.services {
-        border: 5px solid rgb(98, 119, 141);
-        border-collapse: collapse;
-        font-size: 0.75em;
         width: 95%;
-        margin-left: 15px;
-
     }
 
     table.services caption {
@@ -658,8 +653,9 @@ div.social_media img:hover {
         =========================
     */
 
-    section.aboutMe h1, section.aboutMe p {
+    section.aboutMe h1, article.aboutMe p {
         margin-left: 15px;
+        margin-right: 15px;
         line-height: 1.3em;
     }
 
@@ -668,13 +664,12 @@ div.social_media img:hover {
     }
 
     figure.aboutMe figcaption {
-        padding-top: 3px;
+        padding-top: 2px;
         text-align: right;
         font-size: 0.8em;
     }
 
     article.aboutMe p {
-        margin-right: 0px;
         margin-top: 0px;
         margin-bottom: 15px;
         line-height: 1.3em;
