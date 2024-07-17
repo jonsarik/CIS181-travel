@@ -39,7 +39,7 @@
 }
 
 html {
-    background: rgb(201, 206, 214);
+    background-image: url(../images/treetrunk.jpg);
     color: rgb(0, 27, 54);
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -64,8 +64,20 @@ body {
     margin: auto;
 }
 
+div.background {
+    background: rgb(201, 206, 214);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 95%;
+    max-width: 1050px;
+    margin: auto;
+    border: 2px solid rgb(0, 27, 54);
+    border-radius: 10px;
+}
+
 nav.horizontal {
-    margin-top: 20px;
+    margin-top: 15px;
     border-bottom: 5px solid rgb(0, 27, 54);
     background: rgb(98, 119, 141);
 }
@@ -104,27 +116,21 @@ nav ul a:active, nav ul a:hover {
 
 footer {
     margin-top: auto;
-    margin-bottom: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: .85em;
     line-height: .95em;
     background: rgb(98, 119, 141);
     color: rgb(239, 239, 239);
     text-align: center;
+    border-radius: 0 0 5px 5px;
 }
 
-footer a {
-    color: rgb(239, 239, 239);
-}
+footer a {color: rgb(239, 239, 239);}
 
-footer a:active, footer a:hover {
-    color: orange;
-}
+footer a:active, footer a:hover {color: orange;}
 
-footer.small {
-    display: none;
-}
+footer.small {display: none;}
 
 /*  ==================
     STYLES: index.html
@@ -135,7 +141,6 @@ main.index {
     display: flex;
     flex-direction: column;
     flex: 1;
-
 }
 
 figure.index {
@@ -143,7 +148,6 @@ figure.index {
     width: 80%;
     margin: auto;
     margin-top: 30px;
-
 }
 
 figure.index figcaption {
@@ -160,7 +164,7 @@ figure.index img {
 }
 
 article.index {
-    flex: 2;
+    flex: 1;
     margin: auto;
 }
 
@@ -175,9 +179,9 @@ div.w3c {
     padding-bottom: 15px;
 }
 
-footer.small {
-    display: none;
-}
+footer.tablet {display: none;}
+
+footer.small {display: none;}
 
 /*  ====================
     STYLES: history.html
@@ -187,7 +191,6 @@ footer.small {
 article.history h1, article.history p {
     margin-left: 30px;
     margin-right: 15px;
-
 }
 
 figure.history {
@@ -260,9 +263,7 @@ section.bottom h2 {
     font-size: 1.2em;
 }
 
-section.bottom p {
-    margin-left: 30px;
-}
+section.bottom p {margin-left: 30px;}
 
 article.highlights li {
     list-style-position: outside;
@@ -285,21 +286,13 @@ li.beach {
     padding-left: 5px;
 }
 
-article.visitorTips p a:link, article.visitorTips p a:visited {
-    color: rgb(0, 27, 54);
-}
+article.visitorTips p a:link, article.visitorTips p a:visited {color: rgb(0, 27, 54);}
 
-article.visitorTips p a:active, article.visitorTips p a:hover {
-    color: orange;
-}
+article.visitorTips p a:active, article.visitorTips p a:hover {color: orange;}
 
-figure.lighthouse a:link, figure.lighthouse a:visited {
-    color: rgb(0, 27, 54);
-}
+figure.lighthouse a:link, figure.lighthouse a:visited {color: rgb(0, 27, 54);}
 
-figure.lighthouse a:active, figure.lighthouse a:hover {
-    color: orange;
-}
+figure.lighthouse a:active, figure.lighthouse a:hover {color: orange;}
 
 div.bottom {
     display: flex;
@@ -327,9 +320,7 @@ figure.lighthouse figcaption {
     width: 100%;
 }
 
-footer.lighthouse_small {
-    display: none;
-}
+footer.lighthouse_small {display: none;}
 
 /*  =====================
     STYLES: services.html
@@ -365,37 +356,28 @@ table.services a:link, table.services a:visited {
     font-weight: bold;
 }
 
-article.services a:active, article.services a:hover {
-    color: orange;
-}
+article.services a:active, article.services a:hover {color: orange;}
 
-table.services thead {
-    background: rgb(98, 119, 141); color: white;
-}
+table.services thead {background: rgb(98, 119, 141); color: white;}
 
 table.services tfoot {
     background: rgb(98, 119, 141);
     color: white;
 }
 
-table.services tfoot a:link, table.services tfoot a:visited {
-    color: white;
-}
+table.services tfoot a:link, table.services tfoot a:visited {color: white;}
 
-table.services tfoot a:active, table.services tfoot a:hover {
-    color: orange;
-}
+table.services tfoot a:active, table.services tfoot a:hover {color: orange;}
 
 table.services thead tr {height: 30px;}
 
 table.services tbody tr {height: 30px;}
 
-col#activity {
-    width: 34%;
-}
+col#activity {width: 34%;}
 
 col.providers {
-    background: rgb(255, 220, 255); width: 33%;
+    background: rgb(255, 220, 255);
+    width: 33%;
 }
 
 /*  ==================
@@ -466,9 +448,7 @@ div.social_media img {
     transition: transform 0.3s ease;
 }
 
-div.social_media img:hover {
-    transform: scale(1.3);
-}
+div.social_media img:hover {transform: scale(1.3);}
 
 /*  ================================
     TABLET STYLES: 401 to 575 pixels
@@ -478,10 +458,21 @@ div.social_media img:hover {
 @media only screen and (max-width: 575px) {
     /*  TABLET STYLES: General  */
 
+    html {
+    background-image: none;
+    background: rgb(201, 206, 214)
+    }
+
+    div.background {
+    width: 98%;
+    min-width: 290px;
+    }
+
     nav.horizontal {
         margin-top: 0px;
         border-bottom: 5px solid rgb(0, 27, 54);
         background: rgb(98, 119, 141);
+        border-radius: 5px 5px 0 0;
     }
 
     nav.horizontal ul {
@@ -523,15 +514,16 @@ div.social_media img:hover {
         margin-bottom: 0px;
     }
 
-    figure.index {
-        margin-top: 15px;
-    }
+    figure.index {margin-top: 15px;}
 
     figure.index figcaption {
         padding-top: 2px;
         text-align: right;
         font-size: 0.8em;
     }
+
+    footer.normal {display:none;}
+    footer.tablet {display: block;}
 
     /*  ===========================
         TABLET STYLES: history.html
@@ -544,9 +536,7 @@ div.social_media img:hover {
         margin-top: 15px;
     }
 
-    figure.history {
-        margin-top: 15px;
-    }
+    figure.history {margin-top: 15px;}
 
     figure.history figcaption {
         padding-top: 2px;
@@ -560,7 +550,6 @@ div.social_media img:hover {
     */
 
     div.background_tablet {
-        #background-color: rgb(201, 206, 214);
         background-color: rgb(98, 119, 141);
         background-image: url(../images/grand_island_lighthouse.png);
         background-position: 50%;
@@ -609,21 +598,13 @@ div.social_media img:hover {
         color: white;
     }
 
-    article.visitorTips p a:link, article.visitorTips p a:visited {
-        color: white;
-    }
+    article.visitorTips p a:link, article.visitorTips p a:visited {color: white;}
 
-    article.visitorTips p a:active, article.visitorTips p a:hover {
-        color: orange;
-    }
+    article.visitorTips p a:active, article.visitorTips p a:hover {color: orange;}
 
-    figure.lighthouse {
-        display: none;
-    }
+    figure.lighthouse {display: none;}
 
-    footer.lighthouse_normal {
-        display: none
-    }
+    footer.lighthouse_normal {display: none}
 
     footer.lighthouse_small {
         display: block;
@@ -640,13 +621,9 @@ div.social_media img:hover {
         line-height: 1.3em;
     }
 
-    table.services {
-        width: 95%;
-    }
+    table.services {width: 95%;}
 
-    table.services caption {
-        padding-top: 3px;
-    }
+    table.services caption {padding-top: 3px;}
 
     /*  =========================
         TABLET STYLES: about.html
@@ -659,9 +636,7 @@ div.social_media img:hover {
         line-height: 1.3em;
     }
 
-    div.aboutMe {
-        flex-direction: column;
-    }
+    div.aboutMe {flex-direction: column;}
 
     figure.aboutMe figcaption {
         padding-top: 2px;
@@ -682,11 +657,9 @@ div.social_media img:hover {
 */
 
 @media only screen and (max-width: 400px) {
-    footer.normal {
-        display: none;
-    }
+    footer.normal {display: none;}
 
-    footer.small {
-        display: block;
-    }
+    footer.tablet {display:none;}
+
+    footer.small {display: block;}
 }
