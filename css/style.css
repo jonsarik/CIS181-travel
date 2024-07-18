@@ -130,6 +130,8 @@ footer a {color: rgb(239, 239, 239);}
 
 footer a:active, footer a:hover {color: orange;}
 
+footer.tablet {display: none;}
+
 footer.small {display: none;}
 
 /*  ==================
@@ -178,10 +180,6 @@ div.w3c {
     text-align: center;
     padding-bottom: 15px;
 }
-
-footer.tablet {display: none;}
-
-footer.small {display: none;}
 
 /*  ====================
     STYLES: history.html
@@ -319,8 +317,6 @@ figure.lighthouse figcaption {
     font-size: 0.9em;
     width: 100%;
 }
-
-footer.lighthouse_small {display: none;}
 
 /*  =====================
     STYLES: services.html
@@ -501,6 +497,10 @@ div.social_media img:hover {transform: scale(1.3);}
         line-height: .95em;
     }
 
+    footer.normal {display: none;}
+
+    footer.tablet {display: block;}
+
     /*  =========================
         TABLET STYLES: index.html
         =========================
@@ -522,8 +522,7 @@ div.social_media img:hover {transform: scale(1.3);}
         font-size: 0.8em;
     }
 
-    footer.normal {display:none;}
-    footer.tablet {display: block;}
+
 
     /*  ===========================
         TABLET STYLES: history.html
@@ -598,18 +597,11 @@ div.social_media img:hover {transform: scale(1.3);}
         color: white;
     }
 
+    figure.lighthouse {display: none;}
+
     article.visitorTips p a:link, article.visitorTips p a:visited {color: white;}
 
     article.visitorTips p a:active, article.visitorTips p a:hover {color: orange;}
-
-    figure.lighthouse {display: none;}
-
-    footer.lighthouse_normal {display: none}
-
-    footer.lighthouse_small {
-        display: block;
-        font-size: 0.8em;
-    }
 
     /*  ============================
         TABLET STYLES: services.html
