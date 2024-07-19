@@ -435,7 +435,7 @@ aside.endorsement {
     box-shadow: -5px -5px 15px gray;
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 75%;
+    width: 80%;
     max-width: 600px;
 }
 
@@ -468,22 +468,42 @@ div.endorsement blockquote {
     box-shadow: -5px 5px 15px black;
 }
 
-blockquote.one {
+blockquote.one, blockquote.two, blockquote.three {
     flex: 1;
-    margin: 15px 10px 10px 15px;
-    background: black;
+    margin: 15px;
+    position: relative;
 }
+
+blockquote.one {background: black;}
 
 blockquote.two {
     flex: 2;
-	margin: 15px 10px 10px 5px;
   	background: #052545;
 }
 
-blockquote.three {
-    flex: 1;
-	margin: 15px 15px 10px 10px;
-  	background: rgb(98, 119, 141);
+blockquote.three {background: rgb(98, 119, 141);}
+
+blockquote.one img, blockquote.two img, blockquote.three img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+blockquote.one img {
+    top: 0%;
+    left: 50%;
+}
+
+blockquote.two img {
+    top: 0%;
+    left: 50%;
+}
+
+blockquote.three img {
+    top: 0%;
+    left: 50%;
 }
 
 h2.tablet {display: none;}
@@ -710,7 +730,8 @@ div.social_media img:hover {transform: scale(1.3);}
         line-height: 1.3em;
     }
 
-    aside.endorsement {max-width: 90%;}
+    aside.endorsement {max-width: 90%;
+        margin-top: 10px;}
 
     div.endorsement {flex-flow: column-reverse;}
 
@@ -719,6 +740,7 @@ div.social_media img:hover {transform: scale(1.3);}
     h2.tablet {
             display: block;
             padding-top: 15px;
+            margin-bottom: 25px;
         }
 
     blockquote.one {margin: 10px 15px 15px;}
