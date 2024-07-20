@@ -118,10 +118,9 @@ nav ul a:active, nav ul a:hover {
 
 footer {
     margin-top: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
     font-size: .85em;
-    line-height: .95em;
+    line-height: 1em;
     background: rgb(98, 119, 141);
     color: rgb(239, 239, 239);
     text-align: center;
@@ -186,11 +185,6 @@ div.w3c {
     STYLES: history.html
     ====================    */
 
-article.history h1, article.history p {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
 figure.history {
     display: flex;
     flex-flow: column;
@@ -211,6 +205,63 @@ figure.history figcaption {
     text-align: right;
     font-size: 0.9em;
 }
+
+div.background h1 {margin-left: 30px;}
+
+main.history {
+    display: flex;
+    flex: 1;
+    align-items: start;
+}
+
+article.history {
+    display: flex;
+    flex-flow: column;
+    flex: 2;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+aside.history {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    background: #c0aac8;
+    max-width: 30%;
+    min-width: 185px;
+    border: 5px outset rgb(0, 27, 54);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
+    padding: 10px 15px 0px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+aside.history h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 1.1em;
+}
+
+aside.history dt {
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+aside.history dl dd.lighthouse {
+    position: relative;
+}
+
+img.lighthouse {
+    position: absolute;
+    width: 20px;
+    transform: translate(-50%, 50%);
+    top: -25px;
+    left: -20px;
+    filter: saturate(1.3);
+}
+
+aside.history a:active, aside.history a:hover {color: orange;}
 
 /*  =======================
     STYLES: activities.html
@@ -547,13 +598,13 @@ div.social_media img:hover {transform: scale(1.3);}
     /*  TABLET STYLES: General  */
 
     html {
-    background-image: none;
-    background: rgb(201, 206, 214)
+        background-image: none;
+        background: rgb(201, 206, 214)
     }
 
     div.background {
-    width: 98%;
-    min-width: 290px;
+        width: 98%;
+        min-width: 290px;
     }
 
     a#navicon {
@@ -578,9 +629,7 @@ div.social_media img:hover {transform: scale(1.3);}
         text-align: left;
     }
 
-    a#navicon:hover+ul, nav.horizontal ul:hover {
-        display: block;
-    }
+    a#navicon:hover+ul, nav.horizontal ul:hover {display: block;}
 
     nav.horizontal ul a {
         display: block;
@@ -591,10 +640,7 @@ div.social_media img:hover {transform: scale(1.3);}
         line-height: 1.3em;
     }
 
-    footer {
-        padding-bottom: 2px;
-        font-size: .75em;
-    }
+    footer {font-size: 0.8em;}
 
     /*  =========================
         TABLET STYLES: index.html
@@ -624,18 +670,39 @@ div.social_media img:hover {transform: scale(1.3);}
         TABLET STYLES: history.html
         =========================== */
 
-    article.history h1, article.history p {
-        margin-left: 15px;
-        line-height: 1.3em;
-        margin-top: 15px;
-    }
-
     figure.history {margin-top: 15px;}
 
     figure.history figcaption {
         padding-top: 2px;
         text-align: right;
         font-size: 0.8em;
+    }
+
+    body.history h1 {
+        margin: 15px 15px 0px;
+        padding: 0px;
+    }
+
+    main.history {
+        flex-flow: column;
+        flex: 1;
+        margin: 0px 15px;
+    }
+
+    main.history p {
+        line-height: 1.3em;
+    }
+
+    article.history {
+        flex: 0;
+        margin: 0px;
+    }
+
+    aside.history {
+        flex:0;
+        max-width: 80%;
+        margin: 10px auto;
+        padding: 10px 15px 0px;
     }
 
     /*  =============================
@@ -721,8 +788,6 @@ div.social_media img:hover {transform: scale(1.3);}
 
     table.services caption {padding-top: 3px;}
 
-
-
     /*  =========================
         TABLET STYLES: about.html
         =========================   */
@@ -747,7 +812,8 @@ div.social_media img:hover {transform: scale(1.3);}
         line-height: 1.3em;
     }
 
-    aside.endorsement {max-width: 90%;
+    aside.endorsement {
+        max-width: 90%;
         margin-top: 10px;}
 
     div.endorsement {flex-flow: column-reverse;}
@@ -772,6 +838,8 @@ div.social_media img:hover {transform: scale(1.3);}
     ==============================  */
 
 @media only screen and (max-width: 400px) {
+    footer {font-size: 0.75em;}
+
     footer.small {display: block;}
 
     body.index footer.tablet {display: none;}
