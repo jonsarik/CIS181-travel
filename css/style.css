@@ -258,6 +258,8 @@ img.lighthouse {
     transition: transform 0.3s ease;
 }
 
+img.lighthouse:hover {transform: scale(1.3);}
+
 aside.history a:active, aside.history a:hover {color: red;}
 
 /*  =======================
