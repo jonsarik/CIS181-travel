@@ -703,6 +703,7 @@ div.social_media img:hover {transform: scale(1.3);}
         =============================   */
 
     div.background_tablet {
+        flex: 1;
         background-color: rgb(98, 119, 141);
         background-image: url(../images/grand_island_lighthouse.png);
         background-position: 50%;
